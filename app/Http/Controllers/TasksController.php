@@ -18,7 +18,7 @@ class TasksController extends Controller
         // タスク一覧ビューでそれを表示
         return view('tasks.index', [
             'tasks' => $tasks,
-        ]);
+         ]);
     }
 
     // getでtasks/createにアクセスされた場合の「新規登録画面表示処理」
@@ -33,7 +33,7 @@ class TasksController extends Controller
     }
 
     // postでtasks/にアクセスされた場合の「新規登録処理」
-    public function store(Request $request)
+    public function store(Request $request)   
     {
         // バリデーション
         $request->validate([
